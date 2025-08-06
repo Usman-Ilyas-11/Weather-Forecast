@@ -25,9 +25,5 @@ A simple and responsive weather application that lets users check the current we
 
 The UI is optimized for mobile devices with responsive design adjustments, ensuring the background and weather card scale properly on small screens.
 
-## 🚀 How to Run Locally
-
-1. Clone the repository:
-```bash
 ##Author
 M.Usman Ilyas
