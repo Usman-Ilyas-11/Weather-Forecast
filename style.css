@@ -1,0 +1,155 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(0, 30%, 96%);
+    background-image: url('wimage.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+.wform {
+    margin: 20px;
+}
+
+.cityinput {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid hsl(0, 1%, 30%);
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    background-color: hsl(120, 49%, 48%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: hsl(120, 51%, 29%);
+}
+
+.card {
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5); 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.4rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.citydisplay,
+.tempdisplay {
+    font-size: 3.4rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
+}
+
+.hdisplay {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.desc {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 3.4rem;
+}
+
+.emoji {
+    margin: 0;
+    font-size: 6rem;
+}
+
+.errordisplay {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+}
+@media (max-width: 600px) {
+  body {
+    padding: env(safe-area-inset, 20px); 
+    margin: 0;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+  }
+
+  .cityinput {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 30px 20px;
+    min-width: unset;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .citydisplay,
+  .tempdisplay,
+  .desc {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .emoji {
+    font-size: 4rem;
+  }
+
+  .errordisplay {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
